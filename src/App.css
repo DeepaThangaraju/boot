@@ -1,38 +1,227 @@
-.App {
+.App{
+  width:100%;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  
+  /* cursor: pointer; */
+}
+
+
+
+.dropdown {
+  
+  margin:1.5rem 0rem 0rem 13rem;
+}
+
+.dropdown-content {
+  /* display: none;
+  position: absolute; */
+  background-color: #f1f1f1;
+  width: 100%;
+  overflow: auto;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+h1{
+  padding:2rem;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: block;
+  list-style: none;
+  padding:0.8rem;
+}
+li a{
+  text-decoration: none;
+  color:black;
+  
+}
+.hide{
+  display:none;
+}
+.shop:hover .hide{
+display:block;
+}
+.home{
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+.header{
+  display: flex;
+  background-color: rgb(230, 228, 228);
+}
+.Shopstyle{
+  width:100%;
+  height:15rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+.Shopstyle p{
+  padding:2rem;
+}
+.box{
+  width:180px;
+  height:390px;
+ 
+  margin:3rem 0rem 0rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.boxlist{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0px;
+  margin-top: 2rem;
+  margin-bottom:6rem;
+  margin-left: 2.8rem;
+}
+.pic{
+  width:100%;
+  height: 7rem;
+  background-color: rgb(230, 228, 228);
+  overflow:auto;
+}
+.box button:hover{
+  background-color: black;
+  transition: 0.5s;
+  color: white;
+  
+}
+.box button{
+  font-size: 1rem;
+  width:6rem;
+  height: 4rem;
+  border-radius: 5px;
+  
+}
+.details{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ strike{
+  opacity:0.5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn1{
+  margin-top:1.4rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn2{
+  margin-top:2rem;
+}
+.btn3{
+  margin-top:3.6rem;
+}
+.vertical button{
+  margin:1rem;
+}
+.foot{
+  width:100%;
+  height:100px;
+  text-align: center;
+  background-color: black;
   color: white;
+  padding-top:3rem;
+}
+.dropdown button{
+  width:3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.cartButton{
+  width:auto;
+  
+  
+}
+.horizontal li a{
+  display: block;
+}
+.horizontal ul li :hover{
+  width: 100%;
+  color:gray;
+}
+.count{
+  border:1px solid black;
+  width:5rem;
+  height: 5rem;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+}
+@media (min-width:600px){
+  .dropdown {
+    
+    margin:1.5rem 0rem 0rem 23rem;
+  }
+  .boxlist{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4rem;
+  }
+  .box{
+    width:180px;
+    height:390px;
+    border:0px solid black;
+    margin:3rem 0rem 0rem 1rem;
+    border-radius: 5px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:800px){
+  
+  .dropdown {
+   
+    margin:1.5rem 0rem 0rem 35rem;
+   
   }
-  to {
-    transform: rotate(360deg);
+  .dropdown-content ul{
+    display:inline;
   }
+  .boxlist{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width:1000px){
+  
+  .boxlist{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5rem;
+  }
+  li a{
+    display: inline;
+   
+    padding:-5rem;
+    
+  }
+  .start{
+    font-size: 2rem;
+    padding-left:2rem;
+  }
+  .header{
+    background-color: rgb(230, 228, 228);
+  }
+  
 }
